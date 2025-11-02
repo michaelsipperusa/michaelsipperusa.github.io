@@ -11,7 +11,7 @@ main:
   - title: "Resources & Materials"
     url: /resourcesmaterials/
     Children:
-      title: "Beginner Resources"
+  -   title: "Beginner Resources"
       url: /beginnerresources/
 
   - title: "Conversation Clubs"
