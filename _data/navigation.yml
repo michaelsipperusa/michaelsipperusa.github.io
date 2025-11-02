@@ -19,12 +19,13 @@ main:
 
   - title: "Teaching"
     url: /teaching/    
+    
+  - title: "USA"
+    url: /usa/
         
   - title: "Blog Posts"
     url: /year-archive/
     
-  - title: "USA"
-    url: /usa/
     
   # - title: "CV"
   #   url: /cv-json/
