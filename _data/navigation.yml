@@ -12,7 +12,7 @@ main:
     url: /resourcesmaterials/
     Subpages:
     - title: "Beginner"
-      url: /beginner/
+      url: /resourcematerials/beginner/
 
   - title: "Conversation Clubs"
     url: /conversationclubs/    
