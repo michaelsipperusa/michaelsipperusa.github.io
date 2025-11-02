@@ -4,12 +4,6 @@ title: "Resources & Materials"
 permalink: /resourcesmaterials/
 author_profile: true
 ---
----
-layout: archive
-title: "Resources & Materials"
-permalink: /resources/
-author_profile: true
----
 
 {% include base_path %}
 
