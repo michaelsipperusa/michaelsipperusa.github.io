@@ -10,6 +10,9 @@
 main:
   - title: "Resources & Materials"
     url: /resourcesmaterials/
+    include:
+  - _pages
+
 
   - title: "Talks"
     url: /talks/    
