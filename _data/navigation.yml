@@ -10,9 +10,6 @@
 main:
   - title: "Resources & Materials"
     url: /resourcesmaterials/
-    Subpages:
-    - title: "Beginner"
-      url: /resourcematerials/beginner/
 
   - title: "Conversation Clubs"
     url: /conversationclubs/    
