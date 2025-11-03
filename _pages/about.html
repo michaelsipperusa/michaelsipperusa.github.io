@@ -6,14 +6,18 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn English with Michael Sipper!</title>
-    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind for custom colors and use Inter font --><script>
+    <title>Learn English with Michael Sipper! (USA Edition)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configure Tailwind for patriotic colors and Inter font -->
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -21,65 +25,91 @@ redirect_from:
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        'primary-blue': '#1E3A8A', // Deep Blue for academic feel
-                        'secondary-gold': '#FBBF24', // Gold accent (still defined but less used for consistency)
-                        'bg-light': '#F9FAFB',
-                        'usa-blue': '#E0F2F1', // A light blue for the USA section background
+                        'navy-blue': '#1E3A8A', // Dark Blue
+                        'deep-red': '#B91C1C',  // Deep Red for accents
+                        'white-bg': '#F9FAFB',  // Crisp White background base
+                        'accent-light': '#FEE2E2', // Very light red/pink for soft accents
                     }
                 }
             }
         }
     </script>
     <style>
-        /* Apply Inter font globally */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f9fbfb;
+            background-color: #F9FAFB; /* Crisp White Base */
         }
-        /* Custom gradient for the hero background */
-        .hero-gradient {
-            background: linear-gradient(180deg, #E0F2F1 0%, #F9FAFB 100%);
+        /* Hero background with a subtle patriotic texture/gradient */
+        .hero-patriotic {
+             background-color: #1E3A8A; /* Navy Blue Base */
+             background-image: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%), 
+                               radial-gradient(circle at 10% 20%, #B91C1C 0%, #1E3A8A 100%);
+             border-bottom: 5px solid #B91C1C; /* Strong Red Divider */
         }
-        /* Ensure the main CTA button always has a blue background */
-        .cta-blue-button {
-            background-color: #1E3A8A; /* primary-blue */
+        /* Main CTA uses Deep Red */
+        .cta-patriotic {
+            background-color: #B91C1C; 
+            letter-spacing: 0.05em; 
+            box-shadow: 0 10px 15px -3px rgba(185, 28, 28, 0.5), 0 4px 6px -4px rgba(185, 28, 28, 0.5);
         }
-        .cta-blue-button:hover {
-            background-color: #1D4ED8; /* a slightly darker blue */
+        .cta-patriotic:hover {
+            background-color: #DC2626; /* Slightly brighter red on hover */
+        }
+        /* Secondary CTA border uses Navy Blue */
+        .cta-secondary-border {
+            border: 2px solid #1E3A8A;
+        }
+        .cta-secondary-border:hover {
+            background-color: #1E3A8A;
+            color: white;
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Header / Hero Section --><header class="hero-gradient pt-16 pb-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight text-gray-900 mb-4">
-                <span class="text-primary-blue">Learn English</span> with Michael Sipper
+    <!-- Header / Hero Section (Patriotic Theme) -->
+    <header class="hero-patriotic pt-16 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center text-white">
+            <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight mb-4">
+                <span class="text-white">Learn English</span> with Michael Sipper
             </h1>
-            <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
-              <strong>Michael SİPPER ilə İngilis Dilini Öyrənmək!</strong><br>
-              <strong>Hörmətli Azərbaycan və Azərbaycanlılara xüsusi bir mesaj:</strong><br>
-              Bu veb saytı Azərbaycan xalqına töhfə vermək üçün yaratdım. Azərbaycan, gözəl xalqınız və ölkəniz, qonaqpərvərliyinizə, mehribanlığa və lütfünüzə inanılmaz dərəcədə minnətdaram. ABŞ-a olan sevginiz üçün sizə təşəkkür etmək istədim, sizi də sevirik! Minlərlə insana kömək etmək üçün əsl şərəfdir və burada minlərlə daha çoxdur. Millətiniz, mədəniyyətiniz və insanlar əbədi yaşasın! <br><br>
-                This website is a free, comprehensive platform designed to support students, faculty, and community members on their English language journey.
-            </p>
-            <div class="flex justify-center space-x-4">
-                <!-- Main CTA - Explore Resources (Now links to michaelsipperusa.github.io/resourcesmaterials/) --><a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white cta-blue-button transition duration-300">
+            
+            <!-- Azerbaijani Text Box: Uses White background for contrast against Navy -->
+            <div class="max-w-4xl mx-auto mb-10 bg-white p-6 rounded-lg shadow-xl border-l-4 border-deep-red text-left text-gray-800">
+                <p class="text-lg text-gray-800 font-semibold mb-2">
+                    Hörmətli Azərbaycan və Azərbaycanlılara xüsusi bir mesaj:
+                </p>
+                <p class="text-base text-gray-600 leading-relaxed">
+                    Bu veb saytı Azərbaycan xalqına töhfə vermək üçün yaratdım. Azərbaycan, gözəl xalqınız və ölkəniz, qonaqpərvərliyinizə, mehribanlığa və lütfünüzə inanılmaz dərəcədə minnətdaram. ABŞ-a olan sevginiz üçün sizə təşəkkür etmək istədim, sizi də sevirik! Minlərlə insana kömək etmək üçün əsl şərəfdir və burada minlərlə daha çoxdur. Millətiniz, mədəniyyətiniz və insanlar əbədi yaşasın!
+                </p>
+                <p class="text-base text-gray-600 mt-4 font-medium">
+                    This platform is a free, comprehensive resource designed to support global students, faculty, and community members on their English language journey.
+                </p>
+            </div>
+            
+            <!-- CTA Buttons (Red and Blue/White) -->
+            <div class="flex justify-center space-x-6">
+                <!-- Main CTA - Deep Red -->
+                <a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-sm text-white cta-patriotic transition duration-300">
                     Explore Resources
                 </a>
-                <!-- Secondary CTA - Join the Community (Now links to michaelsipperusa.github.io/conversationclubs/) --><a href="https://michaelsipperusa.github.io/conversationclubs/" class="inline-flex items-center justify-center px-8 py-3 border border-primary-blue text-base font-medium rounded-full shadow-lg text-primary-blue bg-white hover:bg-primary-blue hover:text-blue transition duration-300">
+                <!-- Secondary CTA - Navy Border -->
+                <a href="https://michaelsipperusa.github.io/conversationclubs/" class="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-sm shadow-md text-navy-blue bg-white cta-secondary-border transition duration-300">
                     Join the Community
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Grid --><main class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         
-        <!-- Introduction and Platform Promise --><section class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Your Path to Fluency Starts Here!</h2>
-            <div class="max-w-4xl mx-auto text-center text-lg text-gray-700">
-                <p class="mb-6">
-                    Whether you are preparing for academic success, professional advancement, or simply want to improve your daily communication skills, you’ll find the resources and collaborative community support you need here.
+        <!-- Introduction and Platform Promise -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Your Path to Fluency Starts Here</h2>
+            <div class="max-w-4xl mx-auto text-center text-lg text-gray-700 border-b pb-6 border-gray-200">
+                <p class="mb-2">
+                    Whether you’re preparing for academic success, professional advancement, or simply want to improve your daily communication skills, you’ll find the resources and collaborative community support you need here.
                 </p>
                 <p>
                     This platform brings together carefully curated learning materials, interactive conversation opportunities, and a vibrant community of learners and educators.
@@ -87,110 +117,129 @@ redirect_from:
             </div>
         </section>
 
-        <!-- Key Focus Areas Grid --><div class="grid md:grid-cols-3 gap-8 mb-8">
+        <!-- Key Focus Areas Grid (Cards use Navy Blue accents) -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
             
-            <!-- Focus Card 1: Academic Success (Link updated) --><div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary-blue">
-                <div class="flex items-center space-x-4 mb-4">
-                    <!-- Graduation Cap Icon (Lucide equivalent via SVG) --><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M22 10v6m0 0l-10 6L2 16V4l10 6 10-6"></path><path d="M12 2v6l10-6"></path></svg>
-                    <h3 class="text-xl font-bold text-gray-900">Academic Success</h3>
+            <!-- Focus Card 1: Academic Success -->
+            <div class="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-navy-blue flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <!-- Graduation Cap Icon (Navy Blue) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M22 10v6m0 0l-10 6L2 16V4l10 6 10-6"></path><path d="M12 2v6l10-6"></path></svg>
+                        <h3 class="text-xl font-bold text-gray-900">Academic Success</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Specifically for international students adjusting to the rigor of academic English. Dive into advanced test preparation and critical writing resources.
+                    </p>
                 </div>
-                <p class="text-gray-600 mb-4">
-                    Specifically for Azerbaijanis and all other international students adjusting to the rigor of academic English. Dive into advanced test preparation and critical writing resources.
-                </p>
-                <!-- Link points to resourcesmaterials/ --><a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="text-primary-blue font-medium hover:text-blue-700 transition duration-300 flex items-center">
+                <a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="text-navy-blue font-semibold hover:text-deep-red transition duration-300 flex items-center mt-auto">
                     Explore Academic Resources &rarr;
                 </a>
             </div>
 
-            <!-- Focus Card 2: Professional Advancement (Border, icon, and link color changed to primary-blue) --><div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary-blue">
-                <div class="flex items-center space-x-4 mb-4">
-                    <!-- Briefcase Icon (Lucide equivalent via SVG) - Stroke color changed to primary-blue --><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                    <h3 class="text-xl font-bold text-gray-900">Professional Advancement</h3>
+            <!-- Focus Card 2: Professional Advancement -->
+            <div class="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-navy-blue flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <!-- Briefcase Icon (Navy Blue) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        <h3 class="text-xl font-bold text-gray-900">Professional Advancement</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Improve workplace communication, perfect your presentation skills, and master formal business correspondence and negotiation language.
+                    </p>
                 </div>
-                <p class="text-gray-600 mb-4">
-                    Improve workplace communication, perfect your presentation skills, and master professional correspondence.
-                </p>
-                <!-- Link color is primary-blue --><a href="#professional" class="text-primary-blue font-medium hover:text-blue-700 transition duration-300 flex items-center">
+                <a href="#professional" class="text-navy-blue font-semibold hover:text-deep-red transition duration-300 flex items-center mt-auto">
                     Improve Workplace Skills &rarr;
                 </a>
             </div>
 
-            <!-- Focus Card 3: Vibrant Community (Link updated) --><div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary-blue">
-                <div class="flex items-center space-x-4 mb-4">
-                    <!-- Users/Community Icon (Lucide equivalent via SVG) --><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                    <h3 class="text-xl font-bold text-gray-900">Vibrant Community</h3>
+            <!-- Focus Card 3: Vibrant Community -->
+            <div class="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-navy-blue flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <!-- Users/Community Icon (Navy Blue) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        <h3 class="text-xl font-bold text-gray-900">Vibrant Community</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Join our guided conversation clubs and connect with a community of learners and faculty exploring English for daily life and cultural insights.
+                    </p>
                 </div>
-                <p class="text-gray-600 mb-4">
-                    Join our conversation clubs and connect with a community of learners and faculty exploring English for daily life and cultural insights.
-                </p>
-                <!-- Link points to conversationclubs/ --><a href="https://michaelsipperusa.github.io/conversationclubs/" class="text-primary-blue font-medium hover:text-blue-700 transition duration-300 flex items-center">
+                <a href="https://michaelsipperusa.github.io/conversationclubs/" class="text-navy-blue font-semibold hover:text-deep-red transition duration-300 flex items-center mt-auto">
                     Join Conversation Clubs &rarr;
                 </a>
             </div>
         </div>
 
-        <!-- NEW: Elongated "USA" Section --><div class="col-span-full bg-usa-blue p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary-blue text-center mb-16">
+        <!-- USA Section (Highlights: uses deep-red background and white text) -->
+        <div class="col-span-full bg-deep-red p-10 rounded-lg shadow-xl border-y border-white text-center mb-16 text-white">
             <div class="flex flex-col items-center justify-center space-y-4">
-                <!-- Flag Icon (or similar) --><span class="text-5xl mb-2" role="img" aria-label="USA Flag">🇺🇸</span>
-                <h3 class="text-3xl font-bold text-gray-900">Explore English in the American Context</h3>
-                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-                    Explore resources specifically designed for understanding American culture, various ways of life, and practical English for visiting or living in the United States.
+                <span class="text-5xl mb-2" role="img" aria-label="USA Flag">🇺🇸</span>
+                <h3 class="text-3xl font-bold">America-Focused English Resources</h3>
+                <p class="text-lg opacity-90 max-w-2xl mx-auto">
+                    Dive into resources specifically designed for understanding American culture, various ways of life, and practical English for visiting or living in the United States.
                 </p>
-                <a href="https://michaelsipperusa.github.io/usa/" class="inline-flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-full shadow-lg text-white cta-blue-button transition duration-300">
+                <a href="https://michaelsipperusa.github.io/usa/" class="inline-flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-sm shadow-lg text-deep-red bg-white hover:bg-gray-100 transition duration-300">
                     Discover USA Resources &rarr;
                 </a>
             </div>
         </div>
 
-        <!-- Resources Library Section --><section class="max-w-6xl mx-auto py-12" id="resources">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">What You Will Find Inside the Library</h2>
+        <!-- Resources Library Section -->
+        <section class="max-w-6xl mx-auto py-12" id="resources">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center border-b pb-4">What You Will Find Inside the Library</h2>
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
                 
-                <!-- Text updated: Beginner-Advanced Resources --><div class="p-5 bg-white rounded-lg shadow-md border border-gray-100">
-                    <span class="text-4xl text-primary-blue mb-2 block">📚</span>
+                <div class="p-5 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition duration-300">
+                    <span class="text-4xl text-deep-red mb-2 block">📚</span>
                     <p class="font-semibold text-gray-700">Beginner-Advanced Resources</p>
                 </div>
-                <div class="p-5 bg-white rounded-lg shadow-md border border-gray-100">
-                    <span class="text-4xl text-primary-blue mb-2 block">✍️</span>
+                <div class="p-5 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition duration-300">
+                    <span class="text-4xl text-deep-red mb-2 block">✍️</span>
                     <p class="font-semibold text-gray-700">Grammar Worksheets</p>
                 </div>
-                <div class="p-5 bg-white rounded-lg shadow-md border border-gray-100">
-                    <span class="text-4xl text-primary-blue mb-2 block">🗣️</span>
+                <div class="p-5 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition duration-300">
+                    <span class="text-4xl text-deep-red mb-2 block">🗣️</span>
                     <p class="font-semibold text-gray-700">Cultural Insights & Context</p>
                 </div>
-                <div class="p-5 bg-white rounded-lg shadow-md border border-gray-100">
-                    <span class="text-4xl text-primary-blue mb-2 block">✅</span>
+                <div class="p-5 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition duration-300">
+                    <span class="text-4xl text-deep-red mb-2 block">✅</span>
                     <p class="font-semibold text-gray-700">Test Preparation Guides</p>
                 </div>
             </div>
 
-            <div class="text-center mt-8 text-lg text-gray-600">
+            <div class="text-center mt-12 text-lg text-gray-600">
                 <p>Everything you need has been organized in one accessible location. Start your journey by diving directly into our
-                    <!-- Link updated to resourcesmaterials/ --><a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="text-primary-blue hover:underline font-semibold">Resources Library</a>!
+                    <a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="text-navy-blue hover:underline font-semibold">Resources Library</a>!
                 </p>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer (All relevant links updated) --><footer class="bg-primary-blue text-white py-12 mt-16">
+    <!-- Footer (Navy Blue) -->
+    <footer class="bg-navy-blue text-white py-10 mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="mb-4 text-lg">
-                **This site is for everyone:** Navigate through our sections using the links below.
+            <p class="mb-4 text-sm font-light uppercase tracking-widest opacity-80">
+                Core Program Navigation
             </p>
-            <div class="flex flex-wrap justify-center space-x-6">
-                <!-- Academic English link updated --><a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="hover:text-secondary-gold transition duration-300">Academic English</a>
-                <span class="text-secondary-gold">|</span>
-                <!-- Workplace Communication link remains an anchor --><a href="#professional" class="hover:text-secondary-gold transition duration-300">Workplace Communication</a>
-                <span class="text-secondary-gold">|</span>
-                <!-- Community & Conversation link updated --><a href="https://michaelsipperusa.github.io/conversationclubs/" class="hover:text-secondary-gold transition duration-300">Community & Conversation</a>
-                <span class="text-secondary-gold">|</span>
-                <!-- Resources Library link updated --><a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="hover:text-secondary-gold transition duration-300">Resources Library</a>
-                <span class="text-secondary-gold">|</span>
-                <!-- NEW: USA Resources link in footer --><a href="https://michaelsipperusa.github.io/usa/" class="hover:text-secondary-gold transition duration-300">USA Resources</a>
+            <div class="flex flex-wrap justify-center space-x-6 text-sm">
+                <!-- Links use Deep Red on hover -->
+                <a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="hover:text-deep-red transition duration-300">Academic English</a>
+                <span class="text-deep-red font-light opacity-50">|</span>
+                <a href="#professional" class="hover:text-deep-red transition duration-300">Workplace Communication</a>
+                <span class="text-deep-red font-light opacity-50">|</span>
+                <a href="https://michaelsipperusa.github.io/conversationclubs/" class="hover:text-deep-red transition duration-300">Community & Conversation</a>
+                <span class="text-deep-red font-light opacity-50">|</span>
+                <a href="https://michaelsipperusa.github.io/resourcesmaterials/" class="hover:text-deep-red transition duration-300">Resources Library</a>
+                <span class="text-deep-red font-light opacity-50">|</span>
+                <a href="https://michaelsipperusa.github.io/usa/" class="hover:text-deep-red transition duration-300">USA Resources</a>
             </div>
         </div>
     </footer>
 
 </body>
 </html>
+
+
